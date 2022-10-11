@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mamba activate snakedeploy
+source activate snakedeploy
 snakedeploy $1 $2
