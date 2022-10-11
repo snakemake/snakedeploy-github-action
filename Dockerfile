@@ -1,5 +1,4 @@
-FROM ubuntu:22.04
-RUN apt-get update && apt-get install python3 python3-pip -y
-RUN pip install snakedeploy
+FROM condaforge/mambaforge
+RUN mamba create -n snakedeploy snakedeploy -y
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
