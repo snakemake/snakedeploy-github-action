@@ -1,0 +1,23 @@
+name: snakedeploy
+
+description: Run snakedeploy with given subcommand
+
+branding:
+  icon: git-pull-request
+  color: green
+
+inputs:
+  subcommand:
+    description: Subcommand to use
+    required: true
+  args:
+    description: Additional Snakedeploy arguments to use
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.subcommand }}
+    - ${{ inputs.args }}
