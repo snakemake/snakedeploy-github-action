@@ -10,3 +10,4 @@ echo "activating snakedeploy env"
 source activate snakedeploy
 echo "running snakedeploy with $1 $2"
 snakedeploy $1 $2
+snakedeploy --help
