@@ -6,4 +6,4 @@ shopt -s extglob
 cd $GITHUB_WORKSPACE
 
 source activate snakedeploy
-snakedeploy $1 $2
+eval "snakedeploy $1 $2"
