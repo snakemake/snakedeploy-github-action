@@ -19,4 +19,4 @@ jobs:
         uses: ./
         with:
           subcommand: update-conda-envs
-          args: .test/*.yaml
+          args: ".test/*.yaml .test/*.yaml"
