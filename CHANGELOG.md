@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/snakemake/snakedeploy-github-action/compare/v1.0.1...v1.0.2) (2022-10-12)
+
+
+### Bug Fixes
+
+* bash strict mode ([#4](https://www.github.com/snakemake/snakedeploy-github-action/issues/4)) ([faefa1a](https://www.github.com/snakemake/snakedeploy-github-action/commit/faefa1acefe6e273a45b67c27afb5dcefd55c259))
+
 ### [1.0.1](https://www.github.com/snakemake/snakedeploy-github-action/compare/v1.0.0...v1.0.1) (2022-10-12)
 
 
