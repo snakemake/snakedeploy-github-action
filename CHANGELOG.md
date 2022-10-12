@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://www.github.com/snakemake/snakedeploy-github-action/compare/v1.0.2...v1.0.3) (2022-10-12)
+
+
+### Bug Fixes
+
+* argument interpretation ([6615bdb](https://www.github.com/snakemake/snakedeploy-github-action/commit/6615bdbb2544baa1e4f8c9b62e021c7b96b4b15d))
+
 ### [1.0.2](https://www.github.com/snakemake/snakedeploy-github-action/compare/v1.0.1...v1.0.2) (2022-10-12)
 
 
