@@ -22,6 +22,12 @@ A github action for using snakedeploy
   with:
     subcommand: pin-conda-envs
     args: workflow/envs/*.yaml
+
+- name: Update wrappers and meta-wrappers
+  uses: snakemake/snakedeploy-github-action@v1
+  with:
+    subcommand: update-snakemake-wrappers
+    args: workflow/Snakefile workflow/rules/*.smk
 ```
 
 For automatically creating PRs from the changes, you can use
@@ -30,8 +36,8 @@ For automatically creating PRs from the changes, you can use
 - name: Create Pull Request
   uses: peter-evans/create-pull-request@v4
   with:
-    branch: autobump/conda-envs
-    title: "perf: autobump conda envs"
+    branch: perf/autobump
+    title: "perf: autobump conda envs and wrappers"
     # this needs a personal access token such that checks are triggered on the created PR, see https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs
     token: ${secrets.GITHUB_PAT}
 ```
